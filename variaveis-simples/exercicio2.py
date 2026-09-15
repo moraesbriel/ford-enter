@@ -1,0 +1,10 @@
+num1 = int(input("Escreva um número inteiro: "))
+num2 = int(input("Escreva outro número inteiro: "))
+
+print("A soma dos dois números é igual a",num1 + num2)
+print("A subtração dos dois números é igual a",num1 - num2)
+print("A divisão dos dois números é igual a",num1 / num2)
+print("A multiplicação dos dois números é igual a",num1 * num2)
+print("A exponenciação dos dois números é igual a",num1 ** num2)
+print("A divisão inteira dos dois números é igual a", num1 // num2)
+print("O módulo dos dois números é igual a",num1 %  num2)
