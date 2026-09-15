@@ -1,3 +1,15 @@
+# 2. Crie um programa onde o usuário irá escrever dois números inteiros quaisquer e o programa irá imprimir:
+
+# a) A soma dos dois números;
+# b) A subtração dos dois números;
+# c) A divisão dos dois números;
+# d) A multiplicação dos dois números;
+# e) A exponenciação dos dois números;
+# f) A divisão inteira dos dois números;
+# g) O módulo dos dois números;
+
+# print o resultado de cada operação.
+
 num1 = int(input("Escreva um número inteiro: "))
 num2 = int(input("Escreva outro número inteiro: "))
 
