@@ -1,3 +1,5 @@
+# 8. Faça um programa que solicite dois números ao usuário (com decimais). Em seguida, solicite que o usuário informe a operação matemática (soma, subtração, multiplicação e divisão)
+
 num1 = float(input("Digite um número:"))
 num2 = float(input("Digite outro número: "))
 operacao = input("Informe a operação matemática: ")

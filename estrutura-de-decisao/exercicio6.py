@@ -1,3 +1,5 @@
+# 6. Elabore um programa onde o usuário digite uma letra e o programa informe se a letra é uma vogal ou uma consoante.
+
 letra = str(input("DIgite uma letra maiúscula: "))
 
 if letra == "A":

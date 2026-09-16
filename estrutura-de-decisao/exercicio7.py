@@ -1,3 +1,5 @@
+# 7. Elabore um programa onde o usuário informe a altura de duas pessoas e o programa retorne quem é mais alto ou se são da mesma altura.
+
 altura1 = float(input("Digite a altura de Fulano: "))
 altura2 = float(input("Digite a altura de Ciclano: "))
 
