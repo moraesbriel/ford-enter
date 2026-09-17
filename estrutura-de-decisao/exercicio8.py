@@ -2,7 +2,7 @@
 
 num1 = float(input("Digite um número:"))
 num2 = float(input("Digite outro número: "))
-operacao = input("Informe a operação matemática: ")
+operacao = input("Informe a operação matemática (Adição, Subtração, Multiplicação, Divisão): ")
 
 if operacao == "Adição":
     print(num1 + num2)
@@ -14,14 +14,7 @@ elif operacao == "Multiplicação":
     print(num1 * num2)
 
 elif operacao == "Divisão":
-    print(num1 / num2)
-
-elif operacao == "Módulo":
-    print(num1 % num2)
-
-elif operacao == "Divisão Inteira":
-    print(num1 // num2)
-
-elif operacao == "Exponenciação":
-    print(num1 ** num2)
-
+    if num2 == 0:
+        print("Não é possível dividir por zero.")
+    else:
+        print(num1 / num2)
