@@ -9,6 +9,8 @@ public class Exercicio05 {
 
     public static void main(String[] args) {
     	
-    	int vet [] = new int [10], vet2 [] = new int [10], vet3 [] = new int [10];
+    	int vet [] = new int [10];
+    	int vet2 [] = new int [10];
+    	int vet3 [] = new int [10];
     }
 }
