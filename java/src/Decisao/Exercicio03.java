@@ -1,5 +1,7 @@
 package Decisao;
 
+import java.util.Scanner;
+
 public class Exercicio03 {
 	/* Faça um programa que verifique o estado civil de uma pessoa.
 	 * 
@@ -15,8 +17,30 @@ public class Exercicio03 {
 	 * Seu programa deve responder: C - Casado */
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
+		Scanner ler = new Scanner(System.in);
+		
+		System.out.println("Digite seu estado civil\nC (Casado)\nS (Solteiro)\nD (Divorciado\nV (Viúvo)\nO (Outros)");
+		String estadoCivil = ler.nextLine();
+		
+		if (estadoCivil == "C" | estadoCivil == "c") {
+			System.out.print("Casado");
+		}
+		
+		else if (estadoCivil == "S" | estadoCivil == "s") {
+			System.out.print("Solteiro");
+		}
+		
+		else if (estadoCivil == "D" | estadoCivil == "d") {
+			System.out.print("Divorciado");
+		}
+		
+		else if (estadoCivil == "V" | estadoCivil == "v") {
+			System.out.print("Viúvo");
+		}
+		
+		else if (estadoCivil == "O" | estadoCivil == "o") {
+			System.out.print("Outros");
+		}
 	}
-
 }
