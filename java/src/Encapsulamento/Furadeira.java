@@ -65,20 +65,4 @@ public class Furadeira implements IEquipamento {
 			System.out.println("Verfique se a furadeira está ligada.");
 		}
 	}
-
-	public String getMarca() {
-		return marca;
-	}
-
-	public int getPotencia() {
-		return potencia;
-	}
-
-	public boolean isLigado() {
-		return ligado;
-	}
-
-	public boolean isFurar() {
-		return furar;
-	}
 }
