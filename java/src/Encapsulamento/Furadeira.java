@@ -5,7 +5,6 @@ public class Furadeira implements IEquipamento {
 	private String marca;
 	private int potencia;
 	private boolean ligado;
-	private boolean furar;
 	
 	@Override
 	public void ligar() {
@@ -33,19 +32,19 @@ public class Furadeira implements IEquipamento {
 	@Override
 	public void aumentarPotencia() {
 		
-		if (this.ligado == true && this.potencia <= 10) {
+		if (this.ligado == true) {
 			this.potencia ++;
 		}
 		
 		else {
-			System.out.println("Verifique se a furadeira está ligada e se a potência já está no máximo.");
+			System.out.println("Verifique se a furadeira está ligada.");
 		}
 	}
 	
 	@Override
 	public void diminuirPotencia() {
 		
-		if (this.ligado == true && this.potencia >= 0) {
+		if (this.ligado == true && this.potencia > 0) {
 			this.potencia --;
 		}
 		
@@ -56,13 +55,22 @@ public class Furadeira implements IEquipamento {
 	
 	@Override
 	public void executarFuncao() {
-		
-		if (this.ligado == true && this.potencia > 0 || this.potencia <= 10) {
-			this.furar = true;
-		}
-		
-		else {
-			System.out.println("Verfique se a furadeira está ligada.");
-		}
+		System.out.println("Rotacionando a broca.");
+	}
+
+	public String getMarca() {
+		return marca;
+	}
+
+	public void setMarca(String marca) {
+		this.marca = marca;
+	}
+	
+	public int getPotencia () {
+		return potencia;
+	}
+
+	public boolean isLigado() {
+		return ligado;
 	}
 }

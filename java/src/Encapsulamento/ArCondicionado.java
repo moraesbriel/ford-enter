@@ -4,34 +4,53 @@ public class ArCondicionado implements IManutencao {
 	
 	private String marca, modelo;
 	private boolean estadoManutencao;
-	private boolean ligado;
-	private int vidaUtil;
 	
-	@Override
 	public void iniciarManutencao() {
-		
-		if (this.ligado == false && this.vidaUtil < 100) {
-			System.out.println("A manutenção pode ser iniciada.");
-			this.vidaUtil ++;
+		if (this.estadoManutencao == true) {
+			System.out.println("Manutenção já iniciada.");
 		}
 		
 		else {
-			this.ligado = false;
+			this.estadoManutencao = true;
 		}
 	}
 	
-	@Override
 	public void finalizarManutencao() {
+		if (this.estadoManutencao == false) {
+			System.out.println("Manutenção já finalizada.");
+		}
 		
-		if (this.ligado == false && this.vidaUtil == 100) {
-			this.ligado = true;
-			System.out.println("O ar condicionado já pode ser ligado.");
+		else {
+			this.estadoManutencao = false;
 		}
 	}
 	
-	@Override
-	public void consultarEstado() {
+	public String consultarEstado() {
+		String estadoManut;
+		if (this.estadoManutencao == true) {
+			estadoManut = "Manutenção iniciada.";
+		}
 		
+		else {
+			estadoManut = "Manutenção finalizada.";
+		}
 		
+		return estadoManut;
+	}
+
+	public String getMarca() {
+		return marca;
+	}
+
+	public void setMarca(String marca) {
+		this.marca = marca;
+	}
+
+	public String getModelo() {
+		return modelo;
+	}
+
+	public void setModelo(String modelo) {
+		this.modelo = modelo;
 	}
 }
